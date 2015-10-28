@@ -9,10 +9,9 @@ Mise en place :
 	Un appel vers jQuery.
 	Un appel vers le petchit plugin jQuery "jquery.regal.parallax.js"
 	Suivis de la déclaration :
-		<script type="text/javascript">
+		
 		$(document).ready(function () {
 			$('.regal-parallax').regal-parallax();
-		});<br>
-		</script>
+		});
 		
 Plus de détails dans la page de démo "regal-parallax.html".
