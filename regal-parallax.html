@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="STYLESHEET" type="text/css" href="css/regal-parallax.css" />
+		<title>regal-parallax régaloeb</title>
+		<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<style>
+		svg{
+			width:100%;
+			transform-origin: 150px 75px;
+			-webkit-transform-origin: 50% 50%;
+			transition:all 0.5s linear;
+		}
+		svg:hover{
+			transform:rotate(90deg);
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="fb-root"></div>
+
+			<!-- start main -->
+			<div id="main">
+				<h1>Hey, mec! Tu veux du regal-parallax ?!</h1>
+				<h2>Beeuuh, c'est quoi le regal-parallax ?</h2>
+				<p>Tais-toi, scrolle la page et regarde-ça, mec !</p>
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="1" data-axe="horiz" style="background-position:0 0;">
+				<!--  
+				data-bg: 1 pour mvt background 
+				data-sens: 1 pour aller de 0 à 100%, -1 pour aller de 100 à 0%
+				data-axe: horiz: mvt horizontal, vertic: mvt vertical, both: pour les 2
+				-->
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-pox="0#450" data-alpha="10#80" data-depth="0.5" style="left:0px; top:200px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="400#100" data-alpha="10#50" style="left:400px; top:20px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="10#300" data-alpha="50#90" style="left:10px; top:300px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#50" data-alpha="80#50" style="left:450px; top:350px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" data-width="20#500" data-height="20#500" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:225px;"></div>
+					<!--
+					data-pox et data-poy: pos-init#pos-finale
+					-->
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="both" data-depth="0.5" style="background-position:100% 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#500" data-pox="100#500" data-alpha="10#80" style="left:100px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="350#0" style="left:350px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="1" data-axe="both" data-depth="1" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="10#450" data-pox="0#500" data-alpha="10#80" data-width="20#900" data-height="20#900" style="left:0px; top:10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#-100" style="left:450px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:225px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="vertic" style="background-position:0 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#600" data-alpha="80#20" style="left:50px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge2" data-poy="600#-100" style="left:150px; top:600px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="200#100" style="left:350px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge2" data-poy="600#-100" style="left:400px; top:600px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:225px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				
+				
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="1" data-axe="horiz" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-pox="0#450" data-alpha="10#80" style="left:0px; top:200px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="400#100" data-alpha="10#50" style="left:400px; top:20px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="10#300" data-alpha="50#90" style="left:10px; top:300px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#50" data-alpha="80#50" style="left:450px; top:350px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="both" style="background-position:100% 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#500" data-pox="100#500" data-alpha="10#80" style="left:100px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="350#0" style="left:350px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:225px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="1" data-axe="both" data-depth="0.5" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="10#200" data-pox="500#100" data-alpha="10#80" style="left:500px; top:10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#-100" style="left:450px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:225px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="vertic" style="background-position:0 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#600" data-alpha="80#20" style="left:50px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge2" data-poy="600#-100" style="left:150px; top:600px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="200#100" style="left:350px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge2" data-poy="600#-100" style="left:400px; top:600px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<p>Ah, d'accord, le regal-parallax, c'est le truc qui fait mal aux yeux <br>et qui donne envie de vomir...</p>
+				
+				<div class="notes">
+					<h2>Background</h2>
+					<p>
+						L'image de fond de chaque bloc avec classe "regal-parallax" et data-bg="1" se déplace en fonction du scroll.<br>
+						les images de background doivent évidemment être plus grandes que les conteneurs regal-parallax, sinon "ça marche moins bien" (à lire avec la voix de Bourvil).<br>
+						L'attribut "data-sens" détermine le sens de déplacement :<br>
+						&nbsp; &nbsp; data-sens="1" => de 0 à 100%.<br>
+						&nbsp; &nbsp; data-sens="-1" => de 100 à 0%<br>
+						L'attribut "data-axe" détermine le mouvement :<br>
+						&nbsp; &nbsp; data-axe="horiz" => de gauche à droite.<br>
+						&nbsp; &nbsp; data-axe="vertic" => de haut en bas.<br>
+						&nbsp; &nbsp; data-axe="both" => les deux.<br>
+						L'attribut "data-depth" applique un ratio au pourcentage :<br>
+						&nbsp; &nbsp; data-depth="1" => de 0 à 100%.<br>
+						&nbsp; &nbsp; data-depth="0.5" => de 0 à 50%.<br>
+						&nbsp; &nbsp; data-depth="2" => de 0 à 200%.<br>
+						etssétéri, etssétéra<br>
+						&nbsp; &nbsp; &lt;div class="regal-parallax" data-bg="1" data-sens="1" data-axe="horiz">
+					</p>
+					<h2>Eléments contenu dans le bloc "regal-parallax"</h2>
+					<p>
+						Chaque élément avec classe "regal-parallax-item" se déplace en fonction du scroll.<br>
+						L'attribut "data-pox" détermine les valeurs horizontales de départ et de fin :<br>
+						&nbsp; &nbsp; data-pox="100#300" => de 100 à 300px.<br>
+						L'attribut "data-poy" détermine les valeurs verticales de départ et de fin :<br>
+						&nbsp; &nbsp; data-poy="100#300" => de 100 à 300px.<br>
+						L'attribut "data-alpha" détermine les valeurs de transparence de départ et de fin :<br>
+						&nbsp; &nbsp; data-alpha="20#80" => de 20 à 80%.<br>
+						L'attribut "data-depth" applique un ratio au pourcentage :<br>
+						&nbsp; &nbsp; data-depth="1" => de 0 à 100%.<br>
+						&nbsp; &nbsp; data-depth="0.5" => de 0 à 50%.<br>
+						&nbsp; &nbsp; data-depth="2" => de 0 à 200%.<br>
+						Pas très utile vu qu'on détermine précisément les valeurs pour chaque élément mais bon, on sait jamais...<br><br>
+						Les attributs data-width et data-height déterminent largeur et hauteur :<br>
+						&nbsp; &nbsp; data-width="100#300" => de 100 à 300px.<br>
+						&nbsp; &nbsp; data-height="100#300" => de 100 à 300px.<br>
+						&lt;div class="regal-parallax-item" data-pox="100#300" data-poy="-10#600" data-alpha="80#20" data-depth="0.5" data-width="20#500" data-height="20#500">
+					</p>
+					<h2>CSS3</h2>
+					<p>
+						Avec une petit surcouche de CSS3, en appliquant une classe spécifique au éléments à animer, le mouvement continue un peu après le scroll et on peut y appliquer une fonction de ease :
+						Dans cet exemple :<br>
+						.bouge{<br>
+						&nbsp; &nbsp; transition: all 0.6s ease-out;<br>
+						}<br>
+						Le mouvement continue 0.6s après le scroll.<br>
+						La fonction est un ease-out, c'est à dire qu'il ralentit sur la fin.<br><br>
+						.bouge2{<br>
+						&nbsp; &nbsp; transition: all 0.8s ease-out;<br>
+						}<br>
+						Le mouvement continue 0.8s après le scroll.<br>
+						La fonction est un ease-out, c'est à dire qu'il ralentit sur la fin.<br><br>
+						.bouge3{<br>
+						&nbsp; &nbsp; transition: all 0.8s cubic-bezier(.5,1.9,.5,1);<br>
+						}<br>
+						Le mouvement continue 0.6s après le scroll.<br>
+						La fonction est une courbe de Bezier spécifique qui applique un léger rebond sur la fin.<br>
+						Pour trouver sa courbe : <a href="http://cubic-bezier.com" target="_blank">cubic-bezier.com</a>.<br><br>
+						&lt;div class="regal-parallax bouge" data-bg="1" data-sens="1" data-axe="horiz"><br>
+						&lt;div class="regal-parallax-item bouge2" data-pox="100#300" data-poy="-10#600" data-alpha="80#20">
+					</p>
+					<h2>Mise en place</h2>
+					<p>
+						Une structure HTML qui va bien, c'est à dire au moins un bloc avec la classe "regal-parallax" contenant des blocs avec la classe "regal-parallax-item".<br>
+						Un appel vers jQuery : &lt;script type="text/javascript" src="js/jquery-1.7.min.js">&lt;/script><br>
+						Un appel vers le petchit plugin jQuery : &lt;script type="text/javascript" src="js/jquery.regal-parallax.js">&lt;/script><br>
+						Suivis de la déclaration :<br>
+						&lt;script type="text/javascript"><br>
+						&nbsp; $(document).ready(function () {<br>
+						&nbsp; &nbsp; $('.regal-parallax').regal-parallax();<br>
+						&nbsp; });<br>
+						&lt;/script><br>
+					</p>
+					<h2>Merci qui ?</h2>
+					<p>Merci moi.</p>
+					<p>
+						Bon, c'est encore perfectible (par exemple <strike>en ajoutant aussi un principe de zoom</strike> - c'est fait, bon c'est pas vraiment un zoom mais ça peut tès bien le remplacer ! -  mais aussi en optimisant le code, <strike>voire en le transformant en plugin jQuery</strike> - c'est fait aussi) mais c'est déjà pas si mal.<br><br>
+						<a href="js/jquery-1.7.2.min.js" target="_blank">jQuery</a>, <a href="js/jquery.regal-parallax.js" target="_blank">le petit fichier *.js du plugin jQuery</a><br>
+						Choppe les JS, clique-droit "view-source" pour voir à quoi ressemble le code de cette petite page et fais-toi plaiz.<br>
+						Ou pas.
+					</p>
+				</div>
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="1" data-axe="horiz" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-pox="0#450" data-alpha="10#80" style="left:0px; top:200px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="400#100" data-alpha="10#50" style="left:400px; top:20px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="10#300" data-alpha="50#90" style="left:10px; top:300px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#50" data-alpha="80#50" style="left:450px; top:350px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:225px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="both" style="background-position:100% 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#500" data-pox="100#500" data-alpha="10#80" style="left:100px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="350#0" style="left:350px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:161px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:225px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="1" data-axe="both" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="10#200" data-pox="500#100" data-alpha="10#80" style="left:500px; top:10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#-100" style="left:450px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="vertic" style="background-position:0 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#600" data-alpha="80#20" style="left:50px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge2" data-poy="600#-100" style="left:150px; top:600px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-poy="200#100" style="left:350px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge2" data-poy="600#-100" style="left:400px; top:600px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				
+				
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="1" data-axe="horiz" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-pox="0#450" data-alpha="10#80" style="left:0px; top:200px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="400#100" data-alpha="10#50" style="left:400px; top:20px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="10#300" data-alpha="50#90" style="left:10px; top:300px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#50" data-alpha="80#50" style="left:450px; top:350px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="both" style="background-position:100% 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#500" data-pox="100#500" data-alpha="10#80" style="left:100px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="350#0" style="left:350px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+				
+				<div class="section bigger regal-parallax bouge" data-bg="1" data-sens="1" data-axe="both" style="background-position:0 0;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="10#200" data-pox="500#100" data-alpha="10#80" style="left:500px; top:10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="450#100" style="left:450px; top:300px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="400#10" data-pox="10#300" style="left:10px; top:400px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="450#-100" style="left:450px; top:100px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#90" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light-2.png">
+				</div>
+				
+				<div class="section regal-parallax bouge" data-bg="1" data-sens="-1" data-axe="vertic" style="background-position:0 100%;">
+					<div class="bulle bulle-1 regal-parallax-item bouge2" data-poy="-10#600" data-alpha="80#20" style="left:50px; top:-10px;"></div>
+					<div class="bulle bulle-2 regal-parallax-item bouge2" data-poy="600#-100" style="left:150px; top:600px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge2" data-poy="200#100" style="left:350px; top:200px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge2" data-poy="600#-100" style="left:400px; top:600px;"></div>
+					
+					<div class="bulle bulle-2 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-3 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.66" style="left:-100px; top:250px;"></div>
+					<div class="bulle bulle-4 regal-parallax-item bouge3" data-pox="-100#550" data-alpha="25#50" data-depth="0.33" style="left:-100px; top:250px;"></div>
+					
+					<img src="img/tete-de-light.png">
+				</div>
+			</div>
+			<!-- end main -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.regal.parallax.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.regal-parallax').regalParallax();
+			});
+		</script>
+	</body>
+</html>
